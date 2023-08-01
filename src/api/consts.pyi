@@ -1,0 +1,138 @@
+from enum import Enum, Flag
+
+class Platform(Enum):
+    Unknown: str
+    Gog: str
+    Steam: str
+    Psn: str
+    XBoxOne: str
+    Generic: str
+    Origin: str
+    Uplay: str
+    Battlenet: str
+    Epic: str
+    Bethesda: str
+    ParadoxPlaza: str
+    HumbleBundle: str
+    Kartridge: str
+    ItchIo: str
+    NintendoSwitch: str
+    NintendoWiiU: str
+    NintendoWii: str
+    NintendoGameCube: str
+    RiotGames: str
+    Wargaming: str
+    NintendoGameBoy: str
+    Atari: str
+    Amiga: str
+    SuperNintendoEntertainmentSystem: str
+    Beamdog: str
+    Direct2Drive: str
+    Discord: str
+    DotEmu: str
+    GameHouse: str
+    GreenManGaming: str
+    WePlay: str
+    ZxSpectrum: str
+    ColecoVision: str
+    NintendoEntertainmentSystem: str
+    SegaMasterSystem: str
+    Commodore64: str
+    PcEngine: str
+    SegaGenesis: str
+    NeoGeo: str
+    Sega32X: str
+    SegaCd: str
+    SegaSaturn: str
+    PlayStation: str
+    PlayStation2: str
+    Nintendo64: str
+    AtariJaguar: str
+    SegaDreamcast: str
+    Xbox: str
+    Amazon: str
+    GamersGate: str
+    Newegg: str
+    BestBuy: str
+    GameUk: str
+    Fanatical: str
+    PlayAsia: str
+    Stadia: str
+    Arc: str
+    ElderScrollsOnline: str
+    Glyph: str
+    AionLegionsOfWar: str
+    Aion: str
+    BladeAndSoul: str
+    GuildWars: str
+    GuildWars2: str
+    Lineage2: str
+    FinalFantasy11: str
+    FinalFantasy14: str
+    TotalWar: str
+    WindowsStore: str
+    EliteDangerous: str
+    StarCitizen: str
+    PlayStationPortable: str
+    PlayStationVita: str
+    NintendoDs: str
+    Nintendo3Ds: str
+    PathOfExile: str
+    Twitch: str
+    Minecraft: str
+    GameSessions: str
+    Nuuvem: str
+    FXStore: str
+    IndieGala: str
+    Playfire: str
+    Oculus: str
+    Test: str
+    Rockstar: str
+
+class Feature(Enum):
+    Unknown: str
+    ImportInstalledGames: str
+    ImportOwnedGames: str
+    LaunchGame: str
+    InstallGame: str
+    UninstallGame: str
+    ImportAchievements: str
+    ImportGameTime: str
+    Chat: str
+    ImportUsers: str
+    VerifyGame: str
+    ImportFriends: str
+    ShutdownPlatformClient: str
+    LaunchPlatformClient: str
+    ImportGameLibrarySettings: str
+    ImportOSCompatibility: str
+    ImportUserPresence: str
+    ImportLocalSize: str
+    ImportSubscriptions: str
+    ImportSubscriptionGames: str
+
+class LicenseType(Enum):
+    Unknown: str
+    SinglePurchase: str
+    FreeToPlay: str
+    OtherUserLicense: str
+
+class LocalGameState(Flag):
+    None_: int
+    Installed: int
+    Running: int
+
+class OSCompatibility(Flag):
+    Windows: int
+    MacOS: int
+    Linux: int
+
+class PresenceState(Enum):
+    Unknown: str
+    Online: str
+    Offline: str
+    Away: str
+
+class SubscriptionDiscovery(Flag):
+    AUTOMATIC: int
+    USER_ENABLED: int

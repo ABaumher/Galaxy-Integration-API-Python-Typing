@@ -1,0 +1,13 @@
+from _typeshed import Incomplete
+from typing import Iterable, Optional
+
+ProcessId: Incomplete
+
+class ProcessInfo:
+    pid: ProcessId
+    binary_path: Optional[str]
+    def __init__(self, pid, binary_path) -> None: ...
+
+def pids() -> Iterable[ProcessId]: ...
+def get_process_info(pid: ProcessId) -> Optional[ProcessInfo]: ...
+def process_iter() -> Iterable[Optional[ProcessInfo]]: ...
