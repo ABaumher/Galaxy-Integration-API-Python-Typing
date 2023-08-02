@@ -1,13 +1,13 @@
-from _typeshed import Incomplete
 from asyncio import StreamReader, StreamWriter
 from inspect import Signature
 from json import JSONEncoder
+from logging import Logger
 from galaxy.reader import StreamLineReader as StreamLineReader
 from galaxy.task_manager import TaskManager as TaskManager
 from typing import Any, Callable, Dict, Iterable, List, NamedTuple, Optional, Union
 from collections.abc import Mapping
 
-logger: Incomplete
+logger: Logger
 
 class JsonRpcError(Exception):
     code: int

@@ -1,14 +1,14 @@
+from logging import Logger
+from typing import Optional
 import aiohttp
-from _typeshed import Incomplete
 from collections.abc import Generator
-from galaxy.api.errors import AccessDenied, AuthenticationRequired, BackendError, BackendNotAvailable, BackendTimeout, NetworkError, TooManyRequests, UnknownBackendResponse, UnknownError
 
-logger: Incomplete
+logger: Logger
 DEFAULT_LIMIT: int
 DEFAULT_TIMEOUT: int
 
 class HttpClient:
-    def __init__(self, limit=..., timeout=..., cookie_jar: Incomplete | None = ...) -> None: ...
+    def __init__(self, limit: int, timeout: int, cookie_jar: Optional[aiohttp.abc.AbstractCookieJar]) -> None: ...
     async def close(self) -> None: ...
     async def request(self, method, url, *args, **kwargs): ...
 
