@@ -1,4 +1,4 @@
-from galaxy.api.consts import LicenseType, LocalGameState, PresenceState, SubscriptionDiscovery
+from .consts import LicenseType, LocalGameState, PresenceState, SubscriptionDiscovery
 from typing import Dict, List, Optional
 
 class Authentication:

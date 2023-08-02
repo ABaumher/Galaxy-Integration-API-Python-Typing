@@ -1,12 +1,8 @@
 import json
-from _typeshed import Incomplete
 from logging import Logger
 from types import TracebackType
-from galaxy.api.consts import Feature as Feature, OSCompatibility as OSCompatibility
-from galaxy.api.importer import CollectionImporter as CollectionImporter, Importer as Importer, SynchroneousImporter as SynchroneousImporter
-from galaxy.api.jsonrpc import ApplicationError as ApplicationError, Connection as Connection
-from galaxy.api.types import Achievement as Achievement, Authentication as Authentication, Game as Game, GameLibrarySettings as GameLibrarySettings, GameTime as GameTime, LocalGame as LocalGame, NextStep as NextStep, Subscription as Subscription, SubscriptionGame as SubscriptionGame, UserInfo as UserInfo, UserPresence as UserPresence
-from galaxy.task_manager import TaskManager as TaskManager
+from .consts import Feature, OSCompatibility
+from .types import Achievement, Authentication, Game, GameLibrarySettings, GameTime, LocalGame, NextStep, Subscription, SubscriptionGame, UserInfo, UserPresence
 from typing import Any, AsyncGenerator, Coroutine, Dict, List, Optional, Type, TypeVar, Union
 
 logger: Logger

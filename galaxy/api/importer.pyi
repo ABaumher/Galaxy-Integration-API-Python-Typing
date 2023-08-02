@@ -1,8 +1,7 @@
 from logging import Logger
 
-from galaxy.api.errors import ImportInProgress as ImportInProgress, UnknownError as UnknownError
-from galaxy.api.jsonrpc import ApplicationError as ApplicationError
-from galaxy.task_manager import TaskManager
+from .jsonrpc import ApplicationError
+from ..task_manager import TaskManager
 
 from typing import Awaitable, Callable, Generic, List, TypeVar
 

@@ -1,7 +1,7 @@
 from collections.abc import Mapping
 from typing import Optional
 
-from galaxy.api.jsonrpc import ApplicationError
+from .jsonrpc import ApplicationError
 
 class AuthenticationRequired(ApplicationError):
     def __init__(self, message: str, data: Optional[Mapping]) -> None: ...
